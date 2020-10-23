@@ -20,6 +20,8 @@ call plug#end()
 
 set hidden
 set number
+set foldmethod=syntax
+set nofoldenable
 
 " Some servers have issues with backup files, see #649.
 set nobackup
@@ -176,3 +178,4 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+let NERDTreeShowHidden=1
