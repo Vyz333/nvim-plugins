@@ -13,7 +13,9 @@ Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'pseewald/vim-anyfold'
-
+Plug 'flazz/vim-colorschemes'
+Plug 'jiangmiao/auto-pairs'
+Plug 'flaflasun/vim-nightowl'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -22,6 +24,10 @@ set hidden
 set number
 set foldmethod=syntax
 set nofoldenable
+set tabstop=4 shiftwidth=4 expandtab
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
+colorscheme nightowl
+
 
 " Some servers have issues with backup files, see #649.
 set nobackup
