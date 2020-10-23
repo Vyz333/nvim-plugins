@@ -16,9 +16,12 @@ Plug 'pseewald/vim-anyfold'
 Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flaflasun/vim-nightowl'
+Plug 'lifepillar/vim-solarized8'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+let mapleader=","
 
 set hidden
 set number
@@ -185,3 +188,14 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 let NERDTreeShowHidden=1
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd BufWinEnter * NERDTreeMirror
+
+nnoremap <leader>g :NERDTreeToggle<Enter>
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+
+let NERDTreeAutoDeleteBuffer = 1
+
+
