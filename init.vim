@@ -17,6 +17,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flaflasun/vim-nightowl'
 Plug 'lifepillar/vim-solarized8'
+Plug 'vim-airline/vim-airline'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
